@@ -1,0 +1,60 @@
+openapi: "3.0.2"
+info:
+  title: API Title
+  version: "1.0"
+servers:
+  - url: https://api.server.test/v1
+paths:
+  /api/v1/admin/bikes:
+    get:
+      responses:
+        '200':
+          description: OK
+  /api/v1/admin/bike:
+    get:
+      responses:
+        '200':
+          description: OK
+  /api/v1/admin/stations:
+    get:
+      responses:
+        '200':
+          description: OK
+  /api/v1/admin/station:
+    get:
+      responses:
+        '200':
+          description: OK
+    post:
+      responses:
+        '200':
+          description: OK
+    put:
+      responses:
+        '200':
+          description: OK
+  /api/v1/admin/station/{stationId}:
+    delete:
+      responses:
+        '200':
+          description: OK
+  /api/v1/admin/{stationId}/slot:
+    put:
+      responses:
+        '200':
+          description: OK
+  /api/v1/admin/{stationId}/slot/{slotId}:
+    delete:
+      responses:
+        '200':
+          description: OK
+  /api/v1/admin/price/intervals:
+    get:
+      responses:
+        '200':
+          description: OK
+  /api/v1/admin/price/interval:
+    post:
+      responses:
+        '200':
+          description: OK
